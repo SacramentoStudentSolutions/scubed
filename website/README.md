@@ -1,2 +1,2 @@
 # scubed
-Website for CSC 191
+Senior project. Website for CSC 191
