@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+	<title>Math & Science</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="form_style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class ="page-header">
+	<img src="header_tag_white_hand.png">
+</div>
+
+<div class = "main-form">
+	<br>
+	<div class = "container" style = "border-radius: 20px; font-family:'Lato', sans-serif; padding: 10px; background:white;">
+		<h2><strong> Math and Science Electives(24 units)</strong></h2>
+	</div>
+
+	<div class = "container">
+        <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/lower_division.html" id="overall" method = "post">
+            <table class="table table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Units</th>
+                    <th scope="col">Semester</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Notes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course1" placeholder="Math26A/30" name="Course" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units1" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester1" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade1" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes1" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                    </tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course2" placeholder="Math26B/31" name="Course" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units2" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester2" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade2" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes2" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                    </tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course3" placeholder="Engr115/Stat50" name="Course" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units3" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester3" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade3" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes3" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                    </tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course4" placeholder="Phys5A/11A" name="Course" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units4" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester4" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade4" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes4" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                    </tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course5" placeholder="Elect*" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units5" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester5" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade5" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes5" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>	</tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course6" placeholder="Elect" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units6" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester6" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade6" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes6" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>	</tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course7" placeholder="Elect" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units7" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester7" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade7" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes7" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>	</tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course8" placeholder="Elect" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units8" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester8" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade8" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes8" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                    </tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course9" placeholder="Elect" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units9" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester9" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade9" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes9" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>	</tr>
+                    <tr>
+                    <td><form>
+                        <input type="course" class="form-control" id="course10" placeholder="Elect" name="Course" maxlength = "30"/>
+                    </form></td>
+                    <td><form>
+                        <input type="units" class="form-control" id="units10" placeholder="#" name="Units" maxlength = "1"/>
+                    </form></td>
+                    <td><form>
+                        <input type="sem" class="form-control" id="semester10" placeholder="Semester Year" name="Semester" maxlength = "20"/>
+                    </form></td>
+                    <td><form>
+                        <input type="grade" class="form-control" id="grade10" placeholder="Letter Grade" name="Grade" maxlength = "2"/>
+                    </form></td>
+                    <td><form>
+                        <input type="notes" class="form-control" id="notes10" placeholder="Info" name="Note" maxlength = "30"/>
+                    </form></td>
+                </tr></tbody>
+            </table>
+            <thead>
+            <tr>
+                <th scope="col">*Elective must be Math, Physics, or Phil 160.(MATH 100 - Linear Algebra - is recommended)</th>
+                <br><br>
+                <th scope="col">The Math / Science course chosen cannot also be used to satisfy the General Education B2 requirement; if CSc 148 is chosen, it cannot also be used as a computer science elective.</th>
+                <br><br>
+                <th scope="col">Experiential electives: Choose from CSc 192, 194, 195, 195A-D, 198 or 199. (Note: If CSc 199 was taught as a 3-unit course and not independent study, it may be used as a CSc Upper Division Elective instead.)</th>
+                <br><br>
+                <th scope="col">Transfer students should check with an adviser to check unit conversion.</th>
+                <br><br>
+                <th scope="col">See “Advising for Math & Science requirements” in the Undergraduate Student Handbook for more detailed information.</th>
+                <br><br>
+            </tr>
+            </thead>
+
+            <div class="form-group">
+                <div class="btn-group">
+                    <button class="btn" type="previous">Previous</button>
+                    <button class="btn" type="next" formaction="http://athena.ecs.csus.edu/~scubed/upper_division.html">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+
+<div class="footer">
+	<img src="footer_tag.png">
+</div>
+</body>
+</html>
