@@ -100,11 +100,11 @@
                     <div class="form-group">
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" name="username" id="username">
+                            <input type="text" class="form-control" name="username" id="username" oninvalid="this.setCustomValidity('Please Enter Your username')"  oninput="setCustomValidity(' ')" onchange="try{setCustomValidity('')}catch(e){}" required />
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" name="password" id="password">
+                            <input type="password" class="form-control" name="password" id="password" oninvalid="this.setCustomValidity('Please Enter Your password')"  oninput="setCustomValidity(' ')" onchange="try{setCustomValidity('')}catch(e){}" required />
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn text-white btn-sm" style= "background-color:#00563f;" form="overall">Login</button>
