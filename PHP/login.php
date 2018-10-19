@@ -16,7 +16,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             $url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
             header( "Location: $url" );
         }else{
-            echo 'Oops! Please try again!';
+            $message = 'Incorrect password or username.';
+
+            echo "<SCRIPT>
+            alert('$message');
+            </SCRIPT>";
         }
 
         mysqli_close($con);
