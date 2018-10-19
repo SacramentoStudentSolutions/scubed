@@ -36,7 +36,6 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 15 into table';
     }
-}
     $sql = "INSERT INTO Class VALUES('$csc20_title', '$csc20_units', '$csc20_sem', '$csc20_grade', '$csc20_info')";
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 20 into table';
