@@ -7,11 +7,6 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $csc_elect1_sem = $_POST['csc_elect1_sem'];
     $csc_elect1_grade = $_POST['csc_elect1_grade'];
     $csc_elect1_info = $_POST['csc_elect1_info'];
-    echo $csc_elect1_title;
-    echo $csc_elect1_units;
-    echo $csc_elect1_sem;
-    echo $csc_elect1_grade;
-    echo $csc_elect1_info;
     // row 2
     $csc_elect2_title = $_POST['csc_elect2_title'];
     $csc_elect2_units = $_POST['csc_elect2_units'];

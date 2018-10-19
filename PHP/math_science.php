@@ -32,8 +32,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $math_sci_elect1_sem = $_POST['math_sci_elect1_sem'];
     $math_sci_elect1_grade = $_POST['math_sci_elect1_grade'];
     $math_sci_elect1_info = $_POST['math_sci_elect1_info'];
-    
-    
+
+
     $math_sci_elect2_title = $_POST['math_sci_elect2_title'];
     $math_sci_elect2_units = $_POST['math_sci_elect2_units'];
     $math_sci_elect2_sem = $_POST['math_sci_elect2_sem'];
@@ -145,7 +145,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         }else{
             echo 'Can not insert math_sci_elect6 class into table';
         }
-        
+
         mysqli_close($con);
     }
 }else{
