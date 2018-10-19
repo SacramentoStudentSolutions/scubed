@@ -32,24 +32,27 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
     require_once('dbConnect.php');
 
-    $sql = "INSERT INTO Class VALUES('$csc15_title', '$csc15_units', '$csc15_sem', '$csc15_grade', '$csc15_info')";
+    $sql = "INSERT INTO class VALUES('$csc15_title', '$csc15_units', '$csc15_sem', '$csc15_grade', '$csc15_info')";
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 15 into table';
     }
-    $sql = "INSERT INTO Class VALUES('$csc20_title', '$csc20_units', '$csc20_sem', '$csc20_grade', '$csc20_info')";
+    $sql = "INSERT INTO class VALUES('$csc20_title', '$csc20_units', '$csc20_sem', '$csc20_grade', '$csc20_info')";
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 20 into table';
     }
-    $sql = "INSERT INTO Class VALUES('$csc28_title', '$csc28_units', '$csc28_sem', '$csc28_grade', '$csc28_info')";
+    $sql = "INSERT INTO class VALUES('$csc28_title', '$csc28_units', '$csc28_sem', '$csc28_grade', '$csc28_info')";
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 28 into table';
     }
-    $sql = "INSERT INTO Class VALUES('$csc35_title', '$csc35_units', '$csc35_sem', '$csc35_grade', '$csc35_info')";
+    $sql = "INSERT INTO class VALUES('$csc35_title', '$csc35_units', '$csc35_sem', '$csc35_grade', '$csc35_info')";
     if(!mysqli_query($con, $sql)) {
         echo 'Cannot insert CSc 35 into table';
     }
-    $sql = "INSERT INTO Class VALUES('$csc60_title', '$csc60_units', '$csc60_sem', '$csc60_grade', '$csc60_info')";
-    if(!mysqli_query($con, $sql)) {
+    $sql = "INSERT INTO class VALUES('$csc60_title', '$csc60_units', '$csc60_sem', '$csc60_grade', '$csc60_info')";
+    if(mysqli_query($con, $sql)) {
+        $url = 'http://athena.ecs.csus.edu/~scubed/math_science.html';
+        header( "Location: $url" );
+    }else{
         echo 'Cannot insert CSc 60 into table';
     }
     mysqli_close($con);

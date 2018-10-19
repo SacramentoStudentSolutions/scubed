@@ -8,11 +8,6 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $math26A_30_sem = $_POST['math26A_30_sem'];
     $math26A_30_grade = $_POST['math26A_30_grade'];
     $math26A_30_info = $_POST['math26A_30_info'];
-    echo $math26A_30_title;
-    echo $math26A_30_units;
-    echo $math26A_30_sem;
-    echo $math26A_30_grade;
-    echo $math26A_30_info;
 
     $math26B_31_title = $_POST['math26B_31_title'];
     $math26B_31_units = $_POST['math26B_31_units'];
@@ -145,7 +140,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         }
 
         if(mysqli_query($con,$sql)){
-            $url = 'http:__athena.ecs.csus.edu_~scubed_PHP_dbDisplay.php';
+            $url = 'http://athena.ecs.csus.edu/~scubed/upper_devision.html';
             header( "Location: $url" );
         }else{
             echo 'Can not insert math_sci_elect6 class into table';
