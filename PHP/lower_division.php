@@ -31,20 +31,15 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
     $csc60_info = $_POST['csc60_info'];
 
     require_once('dbConnect.php');
-    $sql = "SELECT * FROM Student WHERE SacStateID='$SacStateID'";
 
-    $check = mysqli_fetch_array(mysqli_query($con, $sql));
-
-    $sql = "INSERT INTO Student VALUES('$csc15_title', '$csc15_units', '$csc15_sem', '$csc15_grade', '$csc15_info',
+    $sql = "INSERT INTO Class VALUES('$csc15_title', '$csc15_units', '$csc15_sem', '$csc15_grade', '$csc15_info',
                                        '$csc20_title', '$csc20_units', '$csc20_sem', '$csc20_grade', '$csc20_info',
                                        '$csc28_title', '$csc28_units', '$csc28_sem', '$csc28_grade', '$csc28_info',
                                        '$csc35_title', '$csc35_units', '$csc35_sem', '$csc35_grade', '$csc35_info',
                                        '$csc60_title', '$csc60_units', '$csc60_sem', '$csc60_grade', '$csc60_info',)";
-    if (mysqli_query($con, $sql)) {
-        $url = 'http://athena.ecs.csus.edu/~scubed/math_science.html';
-        header("Location: $url");
-    } else {
-        echo 'Oops! Please try again!';
-    }
-    mysqli_close($con);
+
 }
+else {
+    echo 'Error';
+}
+?>
