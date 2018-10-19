@@ -1,11 +1,12 @@
 <?php
 if($_SERVER['REQUEST_METHOD']=='POST'){
-		$LastName = $_POST['username'];
-		$FirstName = $_POST['password'];
+		$LastName ='';
+		$FirstName ='';
+		$LastName = $_POST['LastName'];
+		$FirstName = $_POST['FirstName'];
 
 		echo 'Username: ',$LastName,'<br>Password: ',$FirstName,'<br>';
 		if($LastName == '' || $FirstName == ''){
-			echo 'something is wrong';
 		}else{
 			require_once('dbConnect.php');
 			$sql = "SELECT * FROM Login WHERE username='$FirstName' and password='$LastName'";
@@ -14,9 +15,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 			echo 'sql: ',$check;
 
 			if(isset($check)){
-				//$url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
-				//	header( "Location: $url" );
-				echo 'it worked'
+				$url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
+					header( "Location: $url" );
 			}else{
 				echo 'Oops! Please try again!';
 			}
