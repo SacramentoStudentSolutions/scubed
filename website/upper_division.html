@@ -1,236 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--meta http-equiv="X-UA-Compatible" content="ie=edge"-->
-	<title>Math & Science</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="form_style.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <title>Upper Division</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="form_style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head>
+
+<style>
+
+.footer {
+	position: fixed;
+	bottom:0px;
+	height:9.2%;
+}
+
+</style>
+
 <body>
 
 <div class ="page-header">
 	<img src="header_tag_white_hand.png">
 </div>
-
 <div class = "main-form">
 	<br>
 	<div class = "container" style = "border-radius: 20px; font-family:'Lato', sans-serif; padding: 10px; background:white;">
-		<h2><strong> Math and Science Electives(24 units)</strong></h2>
+		<h2><strong>Upper Division</strong></h2>
 	</div>
-
-	<div class = "container">
-		<form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/lower_division.html" id="overall" method = "post">
-			<table class="table table-sm">
+	<div class="container">
+		<form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/math_science.html" id="upperdev" method = "post">
+			<table class = "table table-sm">
 				<thead>
 				<tr>
-					<th scope="col">Course</th>
-					<th scope="col">Units</th>
-					<th scope="col">Semester</th>
-					<th scope="col">Grade</th>
-					<th scope="col">Notes</th>
+					<th scope = "col">Course</th>
+					<th scope = "col">Units</th>
+					<th scope = "col">Sem</th>
+					<th scope = "col">Grade</th>
+					<th scope = "col">Notes</th>
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math26A/30_title" placeholder="Math26A/30" name="math26A/30_title" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math26A/30_units" placeholder="#" name="math26A/30_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math26A/30_sem" placeholder="Semester Year" name="math26A/30_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math26A/30_grade" placeholder="Letter Grade" name="math26A/30_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math26A/30_info" placeholder="Info" name="math26A/30_info" maxlength = "30"/>
-					</form></td>
+				<tr><!--Csc 130-->
+					<td><div class="form-group">
+						<!--input class = "form-control form-control-sm" type = "text" id = "130_title" name = "130_title" value = "CSc 130"-->
+						<input class = "form-control form-control-sm" type = "text" id = "130_title" name = "130_title" value = "CSc 130">
+					</div></td>
+					<td><div class="form-group">
+						<!--input class = "form-control form-control-sm" type = "text" id = "130_units" name = "130_units" value = 3-->
+						<input class = "form-control form-control-sm" type = "text" id = "130_units" name = "130_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "130_sem" name = "130_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "130_grade" name = "130_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "130_info" name = "130_info" placeholder = "Additional Info">
+					</div></td>
 				</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math26B/31_title" placeholder="Math26B/31" name="math26B/31_title" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math26B/31_units" placeholder="#" name="math26B/31_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math26B/31_sem" placeholder="Semester Year" name="math26B/31_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math26B/31_grade" placeholder="Letter Grade" name="math26B/31_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math26B/31_info" placeholder="Info" name="math26B/31_info" maxlength = "30"/>
-					</form></td>
+				<tr><!--Csc 131-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "131_title" name = "131_title" value = "CSc 131">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "131_units" name = "131_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "131_sem" name = "131_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "131_grade" name = "131_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "131_info" name = "131_info" placeholder = "Additional Info">
+					</div></td>
 				</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "engr115/stat50_title" placeholder="Engr115/Stat50" name="engr115/stat50_title" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "engr115/stat50_units" placeholder="#" name="engr115/stat50_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "engr115/stat50_sem" placeholder="Semester Year" name="engr115/stat50_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "engr115/stat50_grade" placeholder="Letter Grade" name="engr115/stat50_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "engr115/stat50_info" placeholder="Info" name="engr115/stat50_info"  maxlength = "30"/>
-					</form></td>
+				<tr><!--Csc 133-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "133_title" name = "133_title" value = "CSc 133">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "133_units" name = "133_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "133_sem" name = "133_sem"  placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "133_grade" name = "133_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "133_info" name = "133_info" placeholder = "Additional Info">
+					</div></td>
 				</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control"  id = "Phys5A/11A_title" placeholder="Phys5A/11A" name="Phys5A/11A_title" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "Phys5A/11A_units" placeholder="#" name="Phys5A/11A_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "Phys5A/11A_sem" placeholder="Semester Year" name="Phys5A/11A_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "Phys5A/11A_grade" placeholder="Letter Grade" name="Phys5A/11A_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "Phys5A/11A_info" placeholder="Info" name="Phys5A/11A_info"  maxlength = "30"/>
-					</form></td>
+				<tr><!--Csc 134-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "134_title" name = "134_title" value = "CSc 134">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "134_units" name = "134_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "134_sem" name = "134_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "134_grade" name = "134_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "134_info" name = "134_info" placeholder = "Additional Info">
+					</div></td>
 				</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect1_title" placeholder="Elect*" name="math/sci_elect1_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect1_units" placeholder="#" name="math/sci_elect1_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect1_sem" placeholder="Semester Year" name="math/sci_elect1_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect1_grade" placeholder="Letter Grade" name="math/sci_elect1_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect1_info" placeholder="Info" name="math/sci_elect1_info" maxlength = "30"/>
-					</form></td>	</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect2_title" placeholder="Elect" name=math/sci_elect2_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect2_units" placeholder="#" name="math/sci_elect2_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect2_sem" placeholder="Semester Year" name="math/sci_elect2_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect2_grade" placeholder="Letter Grade" name="math/sci_elect2_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect2_info" placeholder="Info" name="math/sci_elect2_info" maxlength = "30"/>
-					</form></td>	</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect3_title" placeholder="Elect" name="math/sci_elect3_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect3_units" placeholder="#" name="math/sci_elect3_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect3_sem" placeholder="Semester Year" name="math/sci_elect3_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect3_grade" placeholder="Letter Grade" name="math/sci_elect3_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect3_info" placeholder="Info" name="math/sci_elect3_info" maxlength = "30"/>
-					</form></td>	</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect4_title" placeholder="Elect" name="math/sci_elect4_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect4_units" placeholder="#" name="math/sci_elect4_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect4_sem" placeholder="Semester Year" name="math/sci_elect4_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect4_grade" placeholder="Letter Grade" name="math/sci_elect4_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect4_info" placeholder="Info" name="math/sci_elect4_info" maxlength = "30"/>
-					</form></td>
+				<tr><!--Csc 135-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "135_title" name = "135_title" value = "CSc 135">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "135_units" name = "135_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "135_sem" name = "135_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "135_grade" name = "135_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "135_info" name = "135_info" placeholder = "Additional Info">
+					</div></td>
+	 			</tr>
+				<tr><!--Csc 137-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "137_title" name = "137_title" value = "CSc 137">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "137_units" name = "137_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "137_sem" name = "137_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "137_grade" name = "137_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "137_info" name = "137_info" placeholder = "Additional Info">
+					</div></td>
 				</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect5_title" placeholder="Elect" name="math/sci_elect5_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect5_units" placeholder="#" name="math/sci_elect5_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect5_sem" placeholder="Semester Year" name="math/sci_elect5_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect5_grade" placeholder="Letter Grade" name="math/sci_elect5_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect5_info" placeholder="Info" name="math/sci_elect5_info" maxlength = "30"/>
-					</form></td>	</tr>
-				<tr>
-					<td><form>
-						<input type="course" class="form-control" id = "math/sci_elect6_title" placeholder="Elect" name="math/sci_elect6_title" maxlength = "30"/>
-					</form></td>
-					<td><form>
-						<input type="units" class="form-control" id = "math/sci_elect6_units" placeholder="#" name="math/sci_elect6_units" maxlength = "1"/>
-					</form></td>
-					<td><form>
-						<input type="sem" class="form-control" id = "math/sci_elect6_sem" placeholder="Semester Year" name="math/sci_elect6_sem" maxlength = "20"/>
-					</form></td>
-					<td><form>
-						<input type="grade" class="form-control" id = "math/sci_elect6_grade" placeholder="Letter Grade" name="math/sci_elect6_grade" maxlength = "2"/>
-					</form></td>
-					<td><form>
-						<input type="notes" class="form-control" id = "math/sci_elect6_info" placeholder="Info" name="math/sci_elect6_info" maxlength = "30"/>
-					</form></td>
-				</tr></tbody>
+				<tr><!--Csc 138-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "138_title" name = "138_title" value = "CSc 138">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "138_units" name = "138_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "138_sem" name = "138_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "138_grade" name = "138_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "138_info" name = "138_info" placeholder = "Additional Info">
+					</div></td>
+				</tr>
+				<tr><!--Csc 139-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "139_title" name = "139_title" value = "CSc 139">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "139_units" name = "139_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "139_sem" name = "139_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "139_grade" name = "139_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "139_info" name = "139_info" placeholder = "Additional Info">
+					</div></td>
+				</tr>
+				<tr><!--Csc 190-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "190_title" name = "190_title" value = "CSc 190">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "190_units" name = "190_units"  value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "190_sem" name = "190_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "190_grade" name = "190_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "190_info" name = "190_info" placeholder = "Additional Info">
+					</div></td>
+				</tr>
+				<tr><!--Csc 191-->
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "191_title" name = "191_title" value = "CSc 191">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "191_units" name = "191_units" value = "3">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "191_sem" name = "191_sem" placeholder = "Semester Year">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "191_grade" name = "191_grade" placeholder = "Letter Grade">
+					</div></td>
+					<td><div class="form-group">
+						<input class = "form-control form-control-sm" type = "text" id = "191_info" name = "191_info" placeholder = "Additional Info">
+					</div></td>
+				</tr>
+				</tbody>
 			</table>
-			<thead>
-			<tr>
-				<th scope="col">*Elective must be Math, Physics, or Phil 160.(MATH 100 - Linear Algebra - is recommended)</th>
-				<br><br>
-				<th scope="col">The Math / Science course chosen cannot also be used to satisfy the General Education B2 requirement; if CSc 148 is chosen, it cannot also be used as a computer science elective.</th>
-				<br><br>
-				<th scope="col">Experiential electives: Choose from CSc 192, 194, 195, 195A-D, 198 or 199. (Note: If CSc 199 was taught as a 3-unit course and not independent study, it may be used as a CSc Upper Division Elective instead.)</th>
-				<br><br>
-				<th scope="col">Transfer students should check with an adviser to check unit conversion.</th>
-				<br><br>
-				<th scope="col">See “Advising for Math & Science requirements” in the Undergraduate Student Handbook for more detailed information.</th>
-				<br><br>
-			</tr>
-			</thead>
-
-			<div class="form-group">
-				<div class="btn-group">
-					<button class="btn" type="previous">Previous</button>
-					<button class="btn" type="next" formaction="http://athena.ecs.csus.edu/~scubed/PHP/upper_division.php">Next</button>
-				</div>
+			<div class = "btn-group">
+				<button class="btn" type="previous">Previous</button>
+                <button class="btn" type="print" formaction="http://athena.ecs.csus.edu/~scubed/PHP/upper_division.php">Next</button>
 			</div>
 		</form>
 	</div>
 </div>
-<br>
-
 <div class="footer">
 	<img src="footer_tag.png">
 </div>

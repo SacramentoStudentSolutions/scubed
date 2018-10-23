@@ -15,19 +15,19 @@
 				font-family: 'Lato', sans-serif !important;
 				padding-left:5px!important;
 			}
-
+			
 			h3 {
 				color: white
 			}
-
-			html, body {
+			
+			html, body { 
 				height: 100%;
 			}
-
+			
 			.header {
 				background-color: #00563f;
 			}
-
+			
 			@media screen and (max-height: 450px) {
 				.sidenav {padding-top: 15px;}
 				.sidenav a {font-size: 18px;}
@@ -42,7 +42,7 @@
 						<br>
 							<h3>CSc Advising Form Users</h3>
 						<br>
-					</div>
+					</div>		
 				</div>
 					<div class="col-lg-1" style="background-color:#00563f;">
 				</div>
@@ -55,7 +55,7 @@
         $result = mysqli_query($con, $sql);
         ?>
         <br>
-		<table style="width:100%" style="padding: 5px">
+		<table style="width:100%">
             <tr>
 				<th>SacStateID</th>
 				<th>LastName</th>
@@ -84,7 +84,7 @@
 				} else {
 					echo "0 results";
 				}
-
+				
 				mysqli_close($conn);
 
             ?>

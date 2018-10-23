@@ -64,49 +64,108 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 
     require_once('dbConnect.php');
 
-    $sql = "INSERT INTO Class VALUES('$csc130_title', '$csc130_units', '$csc130_sem', '$csc130_grade', '$csc130_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 130 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc131_title', '$csc131_units', '$csc131_sem', '$csc131_grade', '$csc131_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 131 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc133_title', '$csc133_units', '$csc133_sem', '$csc133_grade', '$csc133_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 133 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc134_title', '$csc134_units', '$csc134_sem', '$csc134_grade', '$csc134_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 134 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc135_title', '$csc135_units', '$csc135_sem', '$csc135_grade', '$csc135_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 135 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc137_title', '$csc137_units', '$csc137_sem', '$csc137_grade', '$csc137_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 137 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc138_title', '$csc138_units', '$csc138_sem', '$csc138_grade', '$csc138_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 138 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc139_title', '$csc139_units', '$csc139_sem', '$csc139_grade', '$csc139_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 139 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc190_title', '$csc190_units', '$csc190_sem', '$csc190_grade', '$csc190_info')";
-    if(!mysqli_query($con, $sql)) {
-        echo 'Cannot insert CSc 190 into table';
-    }
-    $sql = "INSERT INTO Class VALUES('$csc191_title', '$csc191_units', '$csc191_sem', '$csc191_grade', '$csc191_info')";
-    if(mysqli_query($con, $sql)) {
-        $url = 'http://athena.ecs.csus.edu/~scubed/electives_other.html';
-        header( "Location: $url" );
-    }else{
-        echo 'Cannot insert CSc 191 into table';
-    }
+	if($csc130_title == '' || $csc130_units == '' || $csc130_sem == '' || $csc130_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc130_title', '$csc130_units', '$csc130_sem', '$csc130_grade', '$csc130_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 130 into table';
+		}
+	}
+	
+	if($csc131_title == '' || $csc131_units == '' || $csc131_sem == '' || $csc131_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc131_title', '$csc131_units', '$csc131_sem', '$csc131_grade', '$csc131_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 131 into table';
+		}
+	}
+	
+	if($csc133_title == '' || $csc133_units == '' || $csc133_sem == '' || $csc133_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc133_title', '$csc133_units', '$csc133_sem', '$csc133_grade', '$csc133_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 133 into table';
+		}
+	}
+	
+	if($csc134_title == '' || $csc134_units == '' || $csc134_sem == '' || $csc134_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc134_title', '$csc134_units', '$csc134_sem', '$csc134_grade', '$csc134_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 134 into table';
+		}
+	}
+	
+	if($csc135_title == '' || $csc135_units == '' || $csc135_sem == '' || $csc135_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc135_title', '$csc135_units', '$csc135_sem', '$csc135_grade', '$csc135_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 135 into table';
+		}
+	}
+	
+	if($csc137_title == '' || $csc137_units == '' || $csc137_sem == '' || $csc137_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc137_title', '$csc137_units', '$csc137_sem', '$csc137_grade', '$csc137_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 137 into table';
+		}
+	}
+	
+	if($csc138_title == '' || $csc138_units == '' || $csc138_sem == '' || $csc138_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc138_title', '$csc138_units', '$csc138_sem', '$csc138_grade', '$csc138_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 138 into table';
+		}
+	}
+	
+	if($csc139_title == '' || $csc139_units == '' || $csc139_sem == '' || $csc139_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc139_title', '$csc139_units', '$csc139_sem', '$csc139_grade', '$csc139_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 139 into table';
+		}
+	}
+	
+	if($csc190_title == '' || $csc190_units == '' || $csc190_sem == '' || $csc190_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc190_title', '$csc190_units', '$csc190_sem', '$csc190_grade', '$csc190_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 190 into table';
+		}
+	}
+	
+	if($csc191_title == '' || $csc191_units == '' || $csc191_sem == '' || $csc191_grade == '') {
+		// Something is not filled.
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$csc191_title', '$csc191_units', '$csc191_sem', '$csc191_grade', '$csc191_info')";
+		if(!mysqli_query($con, $sql)) {
+			echo 'Cannot insert CSc 191 into table';
+		}
+	}
+	
+	$url = 'http://athena.ecs.csus.edu/~scubed/electives_others.html';
+	header( "Location: $url" );
     mysqli_close($con);
 }
 else {

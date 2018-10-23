@@ -63,91 +63,114 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $math_sci_elect6_sem = $_POST['math_sci_elect6_sem'];
     $math_sci_elect6_grade = $_POST['math_sci_elect6_grade'];
     $math_sci_elect6_info = $_POST['math_sci_elect6_info'];
+		
+	require_once('dbConnect.php');
 
+	if($math26A_30_title == '' || $math26A_30_units == '' || $math26A_30_sem == '' || $math26A_30_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math26A_30_title', '$math26A_30_units', '$math26A_30_sem', '$math26A_30_grade', '$math26A_30_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math26A_30 into table';
+		}
+	}
 
+	if($math26B_31_title == '' || $math26B_31_units == '' || $math26B_31_sem == '' || $math26B_31_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math26B_31_title', '$math26B_31_units', '$math26B_31_sem', '$math26B_31_grade', '$math26B_31_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math 26B_31 into table';
+		}
+	}
 
+	if($engr115_stat50_title == '' || $engr115_stat50_units == '' || $engr115_stat50_sem == '' || $engr115_stat50_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$engr115_stat50_title', '$engr115_stat50_units', '$engr115_stat50_sem', '$engr115_stat50_grade', '$engr115_stat50_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert engr115_stat50 into table';
+		}
+	}
 
-    if($math26A_30_title == '' || $math26A_30_units == '' || $math26A_30_sem == '' || $math26A_30_grade == ''){
-        echo 'Please fill all  required values.';
-    }else{
-        require_once('dbConnect.php');
+	if($Phys5A_11A_title == '' || $Phys5A_11A_units == '' || $Phys5A_11A_sem == '' || $Phys5A_11A_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$Phys5A_11A_title', '$Phys5A_11A_units', '$Phys5A_11A_sem', '$Phys5A_11A_grade', '$Phys5A_11A_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert Pbys5A_11A into table';
+		}
+	}
 
-        $sql = "INSERT INTO class 
-                VALUES('$math26A_30_title', '$math26A_30_units', '$math26A_30_sem', '$math26A_30_grade', '$math26A_30_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math26A_30 into table';
-        }
+	if($math_sci_elect1_title == '' || $math_sci_elect1_units == '' || $math_sci_elect1_sem == '' || $math_sci_elect1_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect1_title', '$math_sci_elect1_units', '$math_sci_elect1_sem', '$math_sci_elect1_grade', '$math_sci_elect1_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect1 into table';
+		}
+	}
 
+	if($math_sci_elect2_title == '' || $math_sci_elect2_units == '' || $math_sci_elect2_sem == '' || $math_sci_elect2_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect2_title', '$math_sci_elect2_units', '$math_sci_elect2_sem', '$math_sci_elect2_grade', '$math_sci_elect2_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect2 into table';
+		}
+	}
 
-        $sql = "INSERT INTO class 
-                VALUES('$math26B_31_title', '$math26B_31_units', '$math26B_31_sem', '$math26B_31_grade', '$math26B_31_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math 26B_31 into table';
-        }
+	if($math_sci_elect3_title == '' || $math_sci_elect3_units == '' || $math_sci_elect3_sem == '' || $math_sci_elect3_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect3_title', '$math_sci_elect3_units', '$math_sci_elect3_sem', '$math_sci_elect3_grade', '$math_sci_elect3_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect3 into table';
+		}
+	}
 
+	if($math_sci_elect4_title == '' || $math_sci_elect4_units == '' || $math_sci_elect4_sem == '' || $math_sci_elect4_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect4_title', '$math_sci_elect4_units', '$math_sci_elect4_sem', '$math_sci_elect4_grade', '$math_sci_elect4_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect4 into table';
+		}
+	}
 
-        $sql = "INSERT INTO class 
-                VALUES('$engr115_stat50_title', '$engr115_stat50_units', '$engr115_stat50_sem', '$engr115_stat50_grade', '$engr115_stat50_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert engr115_stat50 into table';
-        }
+	if($math_sci_elect5_title == '' || $math_sci_elect5_units == '' || $math_sci_elect5_sem == '' || $math_sci_elect5_grade == ''){
+		// Something is not filled
+	} else {
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect5_title', '$math_sci_elect5_units', '$math_sci_elect5_sem', '$math_sci_elect5_grade', '$math_sci_elect5_info')";
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect5 into table';
+		}
+	}
 
+	if($math_sci_elect6_title == '' || $math_sci_elect6_units == '' || $math_sci_elect6_sem == '' || $math_sci_elect6_grade == ''){
+		// Something is not filled
+	} else {
+		// Course and Grade are not showing up.  They are inserted as null when it should not be allowed.????????????
+		$sql = "INSERT INTO class 
+				VALUES('$math_sci_elect6_title', '$math_sci_elect6_units', '$math_sci_elect6_sem', '$math_sci_elect6_grade', '$math_sci_elect6_info')";
 
-        $sql = "INSERT INTO class 
-                VALUES('$Phys5A_11A_title', '$Phys5A_11A_units', '$Phys5A_11A_sem', '$Phys5A_11A_grade', '$Phys5A_11A_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert Pbys5A_11A into table';
-        }
+		if(!mysqli_query($con,$sql)){
+			echo 'Can not insert math_sci_elect6 class into table';
+		}
+	}
 
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect1_title', '$math_sci_elect1_units', '$math_sci_elect1_sem', '$math_sci_elect1_grade', '$math_sci_elect1_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect1 into table';
-        }
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect2_title', '$math_sci_elect2_units', '$math_sci_elect2_sem', '$math_sci_elect2_grade', '$math_sci_elect2_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect2 into table';
-        }
-
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect3_title', '$math_sci_elect3_units', '$math_sci_elect3_sem', '$math_sci_elect3_grade', '$math_sci_elect3_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect3 into table';
-        }
-
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect4_title', '$math_sci_elect4_units', '$math_sci_elect4_sem', '$math_sci_elect4_grade', '$math_sci_elect4_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect4 into table';
-        }
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect5_title', '$math_sci_elect5_units', '$math_sci_elect5_sem', '$math_sci_elect5_grade', '$math_sci_elect5_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect5 into table';
-        }
-
-
-        $sql = "INSERT INTO class 
-                VALUES('$math_sci_elect6_title', '$math_sci_elect6_units', '$math_sci_elect6_sem', '$math_sci_elect6_grade', '$math_sci_elect6_info')";
-        if(!mysqli_query($con,$sql)){
-            echo 'Can not insert math_sci_elect6_title into table';
-        }
-
-        if(mysqli_query($con,$sql)){
-            $url = 'http://athena.ecs.csus.edu/~scubed/upper_devision.html';
-            header( "Location: $url" );
-        }else{
-            echo 'Can not insert math_sci_elect6 class into table';
-        }
-
-        mysqli_close($con);
-    }
+	$url = 'http://athena.ecs.csus.edu/~scubed/upper_division.html';
+	header( "Location: $url" );
+	mysqli_close($con);
 }else{
     echo 'Error';
 }
