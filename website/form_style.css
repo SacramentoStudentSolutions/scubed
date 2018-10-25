@@ -30,10 +30,10 @@
     .form-inline
 }
 .jumbotron {
-    width:100%;
+    background-repeat: no-repeat;
+    background-size: auto;
     overflow-x: hidden;
-    background-image:url('banner.jpg');
-    height: 225px;
+    background-image: url('bgimg.jpg');
     border-radius:0;
 
 }
