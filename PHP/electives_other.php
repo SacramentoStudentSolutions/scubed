@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		}
 	}
 	
-	$url = 'http://athena.ecs.csus.edu/~scubed/website/advising_form_Csc.pdf';
+	$url= "http://athena.ecs.csus.edu/~scubed/PHP/advising_form_Csc.pdf";
 	header( "Location: $url" );
 	mysqli_close($con);
 }else{
