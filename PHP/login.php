@@ -7,14 +7,24 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($username == '' || $password == ''){
     }else{
         require_once('dbConnect.php');
-        $sql = "SELECT * FROM Login WHERE username='$username' and password='$password'";
+        $sql = "SELECT * FROM Login2 WHERE username='$username' and password='$password'";
 
         $check = mysqli_fetch_array(mysqli_query($con,$sql));
         //echo 'sql: ',$check;
 
         if(isset($check)){
-            $url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
-            header( "Location: $url" );
+            $sql = "SELECT  admin_flag 
+                    FROM Login2 
+                    WHERE username='$username' and password='$password'";
+            // Redirect to Student Page
+            if ($sql==1) {
+                $url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
+                header("Location: $url");
+            } else {
+                // Redirect to Advisor Page
+                $url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
+                header( "Location: $url" );
+            }
         }else{
             $message = 'Wrong username or password.';
             echo "<SCRIPT>
