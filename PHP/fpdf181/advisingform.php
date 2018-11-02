@@ -7,13 +7,10 @@
  */
 
 require('fpdf.php');
-include("dbConnect.php");
-$result= mysqli_query('select Grade from class',$con);
-
 $pdf= new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',10);
-$pdf->Cell(45,5,'$result',0,0);
+$pdf->Cell(45,5,'',0,0);
 $pdf->Cell(100,5,'Computer Science Department',0,0, 'C');
 $pdf->Cell(45,5,'',0,1);
 //ROW
@@ -44,6 +41,7 @@ $pdf->Cell(190,10,'',0,1);
 $pdf->Cell(85,5,'Required Lower Division CSC Courses (15 Units)',1,0,'C');
 $pdf->Cell(20,5,'',0,0,'C');
 $pdf->Cell(85,5,'CSC Upper Division Electives (9 Units)',1,1,'C');
+//ROW
 $pdf->Cell(20,5,'Course',1,0,'C');
 $pdf->Cell(10,5,'Units',1,0,'C');
 $pdf->Cell(10,5,'Sem',1,0,'C');
