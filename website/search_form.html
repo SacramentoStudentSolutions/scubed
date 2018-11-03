@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Student Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="form_style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+		
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">        </script>
+	 <script src="typeahead.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		$('input.typeahead').typeahead({
+			name: 'typeahead',
+			remote:'search_form.php?key=%QUERY',
+			limit : 10
+		});
+	});
+	</script>
+	
+	
+	
+	</head>
+
+<style>
+	
+
+
+	input[type=text] {
+		width: 250px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: white;
+		background-image: url('searchicon.png');
+		background-position: 10px 10px; 
+		background-repeat: no-repeat;
+		padding: 12px 20px 12px 40px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+
+	input[type=text]:focus {
+		width: 675px;
+	}
+	
+
+
+
+	
+	.footer{
+		position: absolute;
+		bottom: 0;
+		height: 100px;
+	}
+
+</style>
+
+<div class ="page-header">
+	<img src="header_tag_white_hand.png">
+</div>
+
+<div class = "main-form">
+	<br>
+	<div class = "container" style = "border-radius: 20px; font-family:'Lato', sans-serif; padding: 10px; background:white;">
+		<h2><strong> Student Search</strong></h2>
+	</div>
+
+	<div class = "container" style = "background:white;">
+		<form class = "form-horizontal" action="" id="overall" method = "post">
+					<input id="myInput" type="text" name="typeahead" placeholder="Search Student Names...">
+
+			</div>
+		</form>
+	</div>
+</div>
+<br>
+
+<div class="footer">
+	<img src="footer_tag.png">
+</div>
+</div>
+
+</body>
+</html>

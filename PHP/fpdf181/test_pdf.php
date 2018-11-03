@@ -5,37 +5,15 @@
  * Date: 10/29/2018
  * Time: 5:44 PM
  */
-require('fpdf.php');
 
-/*$course, $units, $semester, $grade, $notes;
-function fillCell($inCourse) {
-	require_once('dbConnect.php');
-	$sql = "SELECT * FROM class Where Course='$inCourse'";
-	$result = mysqli_query($con, $sql);
-	if (mysqli_num_rows($result) > 0) {
-		while($row = mysqli_fetch_assoc($result)) {
-			//global $course, $units, $semester, $grade, $notes;
-			$GLOBALS['course'] = $row["Course"];
-			$GLOBALS['units']  = $row["Units"];
-			$GLOBALS['semester']  = $row["Semester"];
-			$GLOBALS['grade']  = $row["Grade"];
-			$GLOBALS['notes']  = $row["Notes"];
-		}
-	} else {
-		$GLOBALS['course'] = "";
-		$GLOBALS['units']  = "";
-		$GLOBALS['semester']  = "";
-		$GLOBALS['grade']  = "";
-		$GLOBALS['notes']  = "";
-	}
-mysqli_close($con);
-}*/
-//fillCell('Grade','csc60_grade');
+require('fpdf.php');
+include("dbConnect.php");
+$result= "test";
 
 $pdf= new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',10);
-$pdf->Cell(45,5,'',0,0);
+$pdf->Cell(45,5,$result,0,0);
 $pdf->Cell(100,5,'Computer Science Department',0,0, 'C');
 $pdf->Cell(45,5,'',0,1);
 //ROW
@@ -66,7 +44,6 @@ $pdf->Cell(190,10,'',0,1);
 $pdf->Cell(85,5,'Required Lower Division CSC Courses (15 Units)',1,0,'C');
 $pdf->Cell(20,5,'',0,0,'C');
 $pdf->Cell(85,5,'CSC Upper Division Electives (9 Units)',1,1,'C');
-//ROW
 $pdf->Cell(20,5,'Course',1,0,'C');
 $pdf->Cell(10,5,'Units',1,0,'C');
 $pdf->Cell(10,5,'Sem',1,0,'C');
@@ -79,8 +56,6 @@ $pdf->Cell(10,5,'Sem',1,0,'C');
 $pdf->Cell(15,5,'Grade',1,0,'C');
 $pdf->Cell(30,5,'Notes',1,1,'C');
 //ROW
-//fillCell('CSc 15');
-//$course, $units, $semester, $grade, $notes;
 $pdf->Cell(20,5,'CSc 15',1,0,'C');
 $pdf->Cell(10,5,'3',1,0,'C');
 $pdf->Cell(10,5,'',1,0,'C');
