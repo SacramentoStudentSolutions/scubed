@@ -1,5 +1,5 @@
 <?php
-define('HOST','athena');
+define('HOST','athena.ecs.csus.edu/');
 define('USER','cscadvisingform');
 define('PASS','egbagitj');
 define('DB','cscadvisingform');
