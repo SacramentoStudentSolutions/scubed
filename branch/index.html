@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Advising Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/form_style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm" style="background-color: #00563f" role="navigation">
+    <img src="resources/footer_tag.png" alt="image">
+    <!--div class="container"-->
+    <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+        <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+            <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+            <li class="dropdown order-1">
+                <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right mt-2">
+                    <li class="px-3 py-2">
+                        <form class="form" role="form" action="php/login.php" method = "post">
+                            <div class="form-group">
+                                <input id="username" name="username" placeholder="Username" class="form-control form-control-sm" type="text" required="">
+                            </div>
+                            <div class="form-group">
+                                <input id="password" name="password" placeholder="Password" class="form-control form-control-sm" type="text" required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </div>
+                            <div class="form-group text-center">
+                                <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--/div-->
+</nav>
+
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Forgot password</h3>
+                <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Reset your password..</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--div class="pb-2 mt-4 mb-2 border-bottom" style="background-color: #00563f">
+    <img src="resources/header_tag_white_hand.png">
+    <img src="resources/footer_tag.png">
+</div-->
+<div>
+    <img src="resources/graduation.jpg" class="img-fluid pb-2 mb-2 border-bottom mx-auto d-block" alt="image"/>
+</div>
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <h2 style="padding: 2%; margin-left: 10px"><strong>Undergraduate Student Advising Form</strong></h2>
+        <p></p>
+        <div class="container-body">
+            <p>If you are an undergraduate student, you should see a Computer Science faculty advisor at least once during the academic year, and keep your signed BS Advising Form on file with the department. Otherwise, a hold will be placed on your registration. If you are new to the major, we suggest that you view the suggested CSC major roadmap. Computer Science majors have a specific GE worksheet that may be useful when plan GE courses. Students should also meet with General Education (GE) advisor to be sure all GE requirements are being completed. GE advisors are available in the Academic Advising Center, located in Lassen Hall 1013.
+
+                Our college also has an Advising, Counseling, and Tutoring (ACT) Office in the ECS Student Success Center in Santa Clara Hall 1213. Here the Academic Advisors can assist with GE/GR questions, lower division major and Smart Planner advising.
+
+                Please note that you must change your major from Pre-computer Science to Computer Science if you want to register for upper-division restricted courses (CSC 133 and above).  If you've already met the requirements listed on the form, but have not filled out the paperwork yet, you will most likely be blocked when trying to register for upper division courses.
+                Regarding PRE-CSC major status:
+                Becoming full major requires completion of CSC 15, 20, 28, 35, 60; Math 30/31 (or Math 26A/B). It is best to fill out the change of major form during the semester you are completing the last of these requirements (ex: Fall 2018). The department will hold onto the form until your grades are posted for Fall 2018. Assuming you pass the courses, the form will then be sent to the Registrar’s office and you will change from Pre-CSC to CSC effective the follwoing semester (ex: Spring 2019).
+
+                When planning your schedule of upper-division electives, please refer to the Tentative 2-Year Schedule of Undergraduate Electives.
+
+                For a comprehensive guide to undergraduate advising, forms, and procedures, download the Undergraduate Student Handbook.
+
+                If you are a graduate student, you should see the faculty advisor assigned to you by the Graduate Coordinator and update your MS Advising Form on an as-needed basis. The department will keep it on file for you. For the MS in Software Engineering, use the MS Advising Form for Software Engineering.
+
+                When planning your schedule of graduate electives, please refer to the Tentative 2-Year Schedule of Graduate Electives.
+
+                Also note: a Computer Science Graduate Student Orientation is given twice a year (January and August) just prior to the start of each semester. Contact the department for details.
+
+                For a comprehensive guide to graduate student advising, forms, and procedures, download the Graduate Student Handbook.</p>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: #00563f; margin-top: 30px">
+    <img src="resources/footer_tag.png" alt="image">
+</div>
+
+</body>
+</html>

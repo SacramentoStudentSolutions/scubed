@@ -6,7 +6,32 @@
  * Time: 5:44 PM
  */
 
+$course = 'CSc 15'; $units; $semester; $grade; $notes;
+function fillCell($inCourse) {
+	require_once('dbConnect.php');
+	$sql = "SELECT * FROM class Where Course='$inCourse'";
+	$result = mysqli_query($con, $sql);
+	if (mysqli_num_rows($result) > 0) {
+		while($row = mysqli_fetch_assoc($result)) {
+			//global $course, $units, $semester, $grade, $notes;
+			$GLOBALS['course'] = $row["Course"];
+			$GLOBALS['units']  = $row["Units"];
+			$GLOBALS['semester']  = $row["Semester"];
+			$GLOBALS['grade']  = $row["Grade"];
+			$GLOBALS['notes']  = $row["Notes"];
+		}
+	} else {
+		$GLOBALS['course'] = "";
+		$GLOBALS['units']  = "";
+		$GLOBALS['semester']  = "";
+		$GLOBALS['grade']  = "";
+		$GLOBALS['notes']  = "";
+	}
+mysqli_close($con);
+}
+$grade = fillCell('CSc 15');
 require('fpdf.php');
+
 $pdf= new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',10);
@@ -54,10 +79,12 @@ $pdf->Cell(10,5,'Sem',1,0,'C');
 $pdf->Cell(15,5,'Grade',1,0,'C');
 $pdf->Cell(30,5,'Notes',1,1,'C');
 //ROW
+//fillCell('CSc 15');
+//$course, $units, $semester, $grade, $notes;
 $pdf->Cell(20,5,'CSc 15',1,0,'C');
 $pdf->Cell(10,5,'3',1,0,'C');
 $pdf->Cell(10,5,'',1,0,'C');
-$pdf->Cell(15,5,'',1,0,'C');
+$pdf->Cell(15,5,$grade,1,0,'C');
 $pdf->Cell(30,5,'',1,0,'C');
 $pdf->Cell(20,5,'',0,0,'C');
 $pdf->Cell(20,5,'',1,0,'C');
