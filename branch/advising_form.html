@@ -76,7 +76,7 @@
                     <h2><strong> General Information</strong></h2>
                 </div>
                 <div class="container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/PHP/StudentInfo.php" id="overall" method = "post">
+                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/PHP/StudentInfo.php" onclick = getElementById('lower_division').click() id="overall" method = "post">
                         <div class="form-group">
                             <label class="control-label col-lg-2" for="fname">First Name:</label>
                             <div class="col-lg-12">
@@ -143,7 +143,7 @@
                     <h2><strong>Lower Division</strong></h2>
                 </div>
                 <div class="container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/general.html" id="lowerdev" method = "post">
+                    <form class = "form-horizontal" id="lowerdiv" method = "post">
                         <table class = "table table-sm">
                             <thead>
                             <tr>
@@ -244,7 +244,8 @@
                         </table>
                         <div class = "btn-group">
                             <button class="btn" type="previous">Previous</button>
-                            <button class="btn" type="print" formaction="http://athena.ecs.csus.edu/~scubed/PHP/lower_division.php">Next</button>
+                            <button class="btn" onclick=(document.getElementById("math_science").click)>Next</button>
+                            <!--formaction="http://athena.ecs.csus.edu/~scubed/PHP/lower_division.php"-->
                         </div>
                     </form>
                 </div>
@@ -259,7 +260,7 @@
                 </div>
 
                 <div class = "container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/lower_division.html" id="overall" method = "post">
+                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/lower_division.html" id="math_sci" method = "post">
                         <table class="table table-sm">
                             <thead>
                             <tr>
@@ -671,7 +672,7 @@
                     <h2><strong> Electives & Others</strong></h2>
                 </div>
                 <div class="container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/upper_division.html" id="overall" method = "post">
+                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/upper_division.html" id="upper_dev" method = "post">
                         <table class="table table-sm">
                             <thead>
                             <tr>
