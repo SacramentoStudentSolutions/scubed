@@ -50,19 +50,19 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#general">General</a>
+            <a class="nav-link active" data-toggle="tab" id = "gen_tab" href="#general">General</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#lower_division">Lower Division</a>
+            <a class="nav-link" data-toggle="tab" id = "lowdev_tab" href="#lower_division">Lower Division</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#math_science">Math & Science</a>
+            <a class="nav-link" data-toggle="tab" id = "mathsci_tab" href="#math_science">Math & Science</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#upper_division">Upper Division</a>
+            <a class="nav-link" data-toggle="tab" id = "upperdev_tab" href="#upper_division">Upper Division</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#electives_other">Electives & Other</a>
+            <a class="nav-link" data-toggle="tab" id = "otherelect_tab" href="#electives_other">Electives & Other</a>
         </li>
     </ul>
 
@@ -143,7 +143,7 @@
                     <h2><strong>Lower Division</strong></h2>
                 </div>
                 <div class="container-body">
-                    <form class = "form-horizontal" id="lowerdiv" method = "post">
+                    <form class = "form-horizontal" id="lower_div" method = "post">
                         <table class = "table table-sm">
                             <thead>
                             <tr>
@@ -243,9 +243,8 @@
                             </tbody>
                         </table>
                         <div class = "btn-group">
-                            <button class="btn" type="previous">Previous</button>
-                            <button class="btn" onclick=(document.getElementById("math_science").click)>Next</button>
-                            <!--formaction="http://athena.ecs.csus.edu/~scubed/PHP/lower_division.php"-->
+                            <button class="btn" type="button" onclick="getElementById('gen_tab').click()">Previous</button>
+                            <button class="btn" type="submit" formaction="http://athena.ecs.csus.edu/~scubed/PHP/lower_division.php">Next</button>
                         </div>
                     </form>
                 </div>
@@ -260,7 +259,7 @@
                 </div>
 
                 <div class = "container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/lower_division.html" id="math_sci" method = "post">
+                    <form class = "form-horizontal" id="math_sci" method = "post">
                         <table class="table table-sm">
                             <thead>
                             <tr>
@@ -456,8 +455,8 @@
 
                         <div class="form-group">
                             <div class="btn-group">
-                                <button class="btn" type="previous">Previous</button>
-                                <button class="btn" type="next" formaction="http://athena.ecs.csus.edu/~scubed/PHP/math_science.php">Next</button>
+                                <button class="btn" type="button" onclick="getElementById('lowdev_tab').click()">Previous</button>
+                                <button class="btn" type="submit" onclick="getElementById('mathsci_tab').click()" formaction="http://athena.ecs.csus.edu/~scubed/branch/php/math_science.php">Next</button>
                             </div>
                         </div>
                     </form>
@@ -471,7 +470,7 @@
                     <h2><strong>Upper Division</strong></h2>
                 </div>
                 <div class="container-body">
-                    <form class = "form-horizontal" action="http://athena.ecs.csus.edu/~scubed/math_science.html" id="upperdev" method = "post">
+                    <form class = "form-horizontal" id="upper_div" method = "post">
                         <table class = "table table-sm">
                             <thead>
                             <tr>
@@ -658,8 +657,8 @@
                             </body>
                         </table>
                         <div class = "btn-group">
-                            <button class="btn" type="previous">Previous</button>
-                            <button class="btn" type="print" formaction="http://athena.ecs.csus.edu/~scubed/PHP/upper_division.php">Next</button>
+                            <button class="btn" type="button" onclick="getElementById('mathsci_tab').click()">Previous</button>
+                            <button class="btn" type="submit" formaction="http://athena.ecs.csus.edu/~scubed/PHP/upper_division.php">Next</button>
                         </div>
                     </form>
                 </div>
@@ -799,8 +798,8 @@
                             </tbody>
                         </table>
                         <div class="btn-group">
-                            <button class="btn" type="previous">Previous</button>
-                            <button class="btn" type="print" formaction="http://athena.ecs.csus.edu/~scubed/PHP/electives_other.php">Print</button>
+                            <button class="btn" type="button" onclick="getElementById('upperdev_tab').click()">Previous</button>
+                            <button class="btn" type="submit" formaction="http://athena.ecs.csus.edu/~scubed/PHP/electives_other.php">Print</button>
                         </div>
                     </form>
                 </div>

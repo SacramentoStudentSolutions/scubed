@@ -168,8 +168,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		}
 	}
 
-	$url = 'http://athena.ecs.csus.edu/~scubed/upper_division.html';
-	header( "Location: $url" );
+	/*$url = 'http://athena.ecs.csus.edu/~scubed/upper_division.html';
+	header( "Location: $url" );*/
 	mysqli_close($con);
 }else{
     echo 'Error';
