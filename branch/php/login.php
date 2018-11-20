@@ -47,7 +47,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 				//echo "Value: ".$value."<br>";
             } else {
                 // Redirect to Advisor Page
-                $url = 'http://athena.ecs.csus.edu/~scubed/branch/php/search_form2.php';
+                $url = 'http://athena.ecs.csus.edu/~scubed/branch/php/advisor_search.php';
                 header( "Location: $url" );
                 //$value="Value: ".$value;
 				//$value="hello world2";
