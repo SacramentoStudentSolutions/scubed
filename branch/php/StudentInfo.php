@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 				$sql = "INSERT INTO Student 
 						VALUES('$SacStateID', '$LastName', '$MiddleInitial', '$FirstName', '$EmailAddress', '$CellPhoneNumber', '$CatalogYear', '$PlannedGraduationDate')";
 				if(mysqli_query($con,$sql)){
-					//$url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
-					//header( "Location: $url" );
+					$url = 'http://athena.ecs.csus.edu/~scubed/lower_division.html';
+					header( "Location: $url" );
 				}else{
 					echo 'Oops! Please try again!';
 		
