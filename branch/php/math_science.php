@@ -168,7 +168,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		}
 	}
 
-	$url = 'http://athena.ecs.csus.edu/~scubed/upper_division.html';
+	$url = 'http://athena.ecs.csus.edu/~scubed/branch/advising_form.html#upper_division';
 	header( "Location: $url" );
 	mysqli_close($con);
 }else{
